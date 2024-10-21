@@ -17,9 +17,8 @@ public class ArrayTricks {
      * @param expectedSum expected sum of two integers in the array
      * @return true/false based if given parameters meet the requirements
      */
-    public boolean checkSumOfTwoNumbersInArray(int[] array, int expectedSum) {
+    public static boolean checkSumOfTwoNumbersInArray(int[] array, int expectedSum) {
         Set<Integer> expectedValues = new HashSet<>();
-
         for (int number : array) {
             if (expectedValues.contains(number)) {
                 return true;
